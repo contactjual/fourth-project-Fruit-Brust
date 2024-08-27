@@ -1,0 +1,179 @@
+/* tablet-view */
+@media screen and (max-width: 1000px) {
+
+    /* Header-nav */
+    header nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    header nav .logo-area {
+        display: none;
+    }
+    header .search-area input {
+        padding: 5px;
+        width: 130px;
+    }
+    header nav .mobile-view {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 15px;
+    }
+
+    /* Deal of the day */
+    main .deal-day {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    main .deal-day .text-area, main .deal-day .time-area {
+        margin: 0 auto;
+    } 
+
+    /* Fruit-card */
+    main .fruit-card {
+        flex-direction: column;
+        gap: 40px;
+        width: 250px;
+        margin: 0 auto;
+    }
+    main .fruit-card .card h2::after {
+        left: 20px;
+    }
+
+    /* Meet the team */
+    main .meet-team .overlay .profile-area {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    main .meet-team {
+        height: 1000px;
+    }
+    main .meet-team .overlay {
+        height: 1000px;
+    }
+
+    /* Why Choose */
+    main .why-choose .side-text-fruit {
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .why-choose .side-text-fruit .right-side>div {
+        flex-direction: row;
+        text-align: left;
+    }
+    main .why-choose .side-text-fruit .middle img {
+        width: 100%;
+    }
+    main .why-choose .side-text-fruit .right-side .integr h2::after {
+        left: 0;
+    }
+    main .why-choose .side-text-fruit .right-side .Sustain h2::after {
+        left: 0;
+    }
+    main .why-choose .side-text-fruit .right-side .benefits h2::after {
+        left: 0;
+    }
+}
+
+
+
+
+/* .mobile-view */
+@media screen and (max-width: 500px) {
+
+    /* Header-nav */
+    header ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    /* Header-banner */
+    header .banner-text .overlay h1 {
+        font-size: 40px;
+    }
+    header .banner-text .overlay p {
+        font-size: 20px;
+    }
+    header .banner-text .overlay {
+        height: 400px;
+    }
+    header .banner-bottom-box {
+        padding: 20px 10px;
+        width: 60%;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 30px;  
+    }
+
+    /* Deal of the day */
+    main .deal-day .text-area {
+        max-width: 300px;
+    }
+    main .deal-day .text-area h1 {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+    main .deal-day .time-area span {
+        font-size: 30px;
+    }
+    main .deal-day .time-area {
+        display: flex;
+    }
+    main .deal-day .time-area img {
+        width: 14px;
+    }
+
+    /* Fruit-card */
+    main .button button {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
+    /* Meet the team */
+    main .meet-team .overlay .text-area h1 {
+        font-size: 30px;
+    }
+    main .meet-team .overlay .text-area p {
+        font-size: 15px;
+    }
+    main .meet-team .overlay .profile-area {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    main .meet-team .overlay .profile-area .icons a i {
+        font-size: 20px;
+    }
+    main .meet-team {
+        height: 1500px;
+    }
+    main .meet-team .overlay {
+        height: 1500px;
+    }
+    
+    /* Why Choose */
+    main .why-choose .title-area h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px;
+    }
+    footer .list ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    footer .icons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 40px;
+    }
+    footer .logo-area {
+        font-size: 15px;
+    }
+}

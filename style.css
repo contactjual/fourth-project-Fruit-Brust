@@ -1,0 +1,351 @@
+:root {
+    --primaryColor: rgb(248 85 89);
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container {
+    /* max-width: 1200px; */
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+}
+a {
+    color: white;
+}
+button {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+/* Header-nav */
+header nav .mobile-view {
+    display: none;
+}
+header ul {
+    display: flex;
+    gap: 20px;
+}
+.logo-area {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 15px;
+    color: white;
+    justify-content: center;
+}
+header .search-area {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 2px 10px 2px 10px;
+    border-radius: 20px;
+}
+header .search-area input {
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 30px 0;
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+header nav ul {
+    font-size: 18px;
+}
+
+/* Header-banner */
+header .banner-text {
+    background-image: url(images/team.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+header .banner-text .overlay {
+    background: rgba(0, 0, 0, 0.425);
+    height: 690px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .banner-text .overlay h1 {
+    font-size: 70px;
+    font-weight: 900;
+}
+header .banner-text .overlay p {
+    font-size: 22px;
+    margin: 30px 0;
+}
+
+header .banner-bottom-box img {
+    width: 100%;
+}
+header .banner-bottom-box p {
+    text-align: center;
+}
+header .banner-bottom-box {
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(127, 126, 126, 0.131), -10px 10px 10px rgba(127, 126, 126, 0.131);
+    padding: 70px 0;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 1800px;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: -70px;  
+}
+
+/* Deal of the day */
+main .deal-day {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+main .deal-day .text-area {
+    max-width: 410px;
+}
+main .deal-day .text-area h1 {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+main .deal-day .text-area p {
+    line-height: 25px;
+}
+main .deal-day .time-area {
+    display: flex;
+}
+main .deal-day .time-area span {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 0 10px;
+}
+main .deal-day .time-area p {
+    text-align: center;
+}
+
+/* Fruit-card */
+main .fruit-card .card {
+    border: 1px solid rgb(240, 240, 240);
+    text-align: center;
+    gap: 10px;
+    padding: 20px 25px;
+}
+
+main .fruit-card input {
+    display: none;
+}
+main .fruit-card .card label {
+    font-size: 20px;
+    margin: 20px 0px;
+    color: #444;
+    transition: all .1s ease-in;
+}
+main .card>div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+main .fruit-card .card input:checked ~ label {
+    color: gold;
+}
+
+main .fruit-card .card h2::after {
+    content: '';
+    width: 160px;
+    height: 1px;
+    background-color: rgb(201, 199, 199);
+    position: absolute;
+    top: 45px;
+    right: 5px;
+}
+main .fruit-card .card h2 {
+    margin: 40px 0;
+    position: relative;
+    /* border-bottom: 1px solid rgb(240, 240, 240); */
+}
+main .fruit-card .card .fruit-name {
+    margin-top: 20px;
+}
+main .fruit-card {
+    display: flex;
+    justify-content: space-between;
+}
+main .button {
+    text-align: center;
+    margin: 100px;
+}
+
+/* Meet the team */
+main .meet-team {
+    background-image: url(images/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    border-radius: 20px;
+}
+main .meet-team .overlay {
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    height: 650px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+main .meet-team .overlay .text-area {
+    max-width: 810px;
+    text-align: center;
+    margin: 0 auto;
+}
+main .meet-team .overlay .text-area h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+main .meet-team .overlay .text-area p {
+    line-height: 30px;
+    font-size: 17px;
+}
+main .meet-team .overlay .profile-area {
+    display: flex;
+    justify-content: space-around;
+}
+main .meet-team .overlay .profile-area h2, main .meet-team .overlay .profile-area p, main .meet-team .overlay .profile-area div{
+    text-align: center;
+    margin-top: 10px;
+}
+main .meet-team .overlay .profile-area div i {
+    color: var(--primaryColor);
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* Why Choose */
+main .why-choose .title-area {
+    max-width: 810px;
+    text-align: center;
+    margin: 80px auto;
+}
+main .why-choose .title-area h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+main .why-choose .title-area p {
+    line-height: 30px;
+    font-size: 17px;
+}
+main .why-choose .side-text-fruit .middle img {
+    width: 100%;
+}
+main .why-choose .side-text-fruit .side>div img {
+    background-color: rgba(157, 157, 157, 0.498);
+    padding: 12px;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+}
+main .why-choose .side-text-fruit .side>div {
+    display: flex;
+    gap: 20px;
+    max-width: 550px;
+}
+main .why-choose .side-text-fruit .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+main .why-choose .side-text-fruit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .why-choose .side-text-fruit .right-side>div {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+main .why-choose .side-text-fruit h2 {
+    font-size: 20px;
+    font-weight: 800;
+    /* border-bottom: 1px solid rgb(187, 187, 187); */
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+}
+main .why-choose .side-text-fruit h2::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: rgb(201, 199, 199);
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+main .why-choose .side-text-fruit .right-side .integr h2::after {
+    left: 75px;
+}
+main .why-choose .side-text-fruit .right-side .Sustain h2::after {
+    left: 84px;
+}
+main .why-choose .side-text-fruit .right-side .benefits h2::after {
+    left: 62px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(21, 21, 21);
+    padding: 100px 0;
+    margin-top: 100px;
+}
+footer .list ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    font-size: 25px;
+}
+footer .logo-area {
+    font-size: 20px;
+}
+
+
+
+
